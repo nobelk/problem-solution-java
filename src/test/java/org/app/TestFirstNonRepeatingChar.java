@@ -1,6 +1,8 @@
 package org.app;
 
+import org.app.FirstNonRepeatingChar;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestFirstNonRepeatingChar {

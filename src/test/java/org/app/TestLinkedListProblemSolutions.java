@@ -1,6 +1,9 @@
 package org.app;
 
+import org.app.LinkedListProblemSolutions;
+import org.app.ListNode;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 

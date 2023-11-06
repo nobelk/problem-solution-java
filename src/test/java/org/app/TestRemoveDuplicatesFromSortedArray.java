@@ -1,6 +1,8 @@
 package org.app;
 
+import org.app.RemoveDuplicatesFromSortedArray;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestRemoveDuplicatesFromSortedArray {
