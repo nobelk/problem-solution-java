@@ -1,5 +1,6 @@
 package org.app;
-import java.util.*;
+
+import java.util.List;
 
 public class MergeKlinkedLists {
     public static ListNode merge(List<ListNode> lists){

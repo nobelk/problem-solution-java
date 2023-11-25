@@ -1,5 +1,4 @@
 package org.app;
-import java.util.Stack;
 
 public class RemoveAllAdjacentDuplicates {
     public static String removeDuplicates(String s){

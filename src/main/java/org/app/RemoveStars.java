@@ -1,6 +1,7 @@
 package org.app;
-import java.util.Stack;
+
 import java.util.Arrays;
+import java.util.Stack;
 
 public class RemoveStars {
 

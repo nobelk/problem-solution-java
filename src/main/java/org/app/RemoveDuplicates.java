@@ -1,6 +1,5 @@
 package org.app;
 import java.util.Stack;
-import java.util.Arrays;
 
 public class RemoveDuplicates {
     public static String removeDuplicates(String s, int k){

@@ -1,6 +1,9 @@
 package org.app;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 class Interval {
     public int start;

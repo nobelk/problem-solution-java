@@ -1,6 +1,6 @@
 package org.app;
 
-import java.util.*;
+import java.util.PriorityQueue;
 
 public class FindMedian {
     private PriorityQueue<Integer> minHeap;
