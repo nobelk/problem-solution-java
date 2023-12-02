@@ -2,30 +2,31 @@ package org.app;
 
 public class NeedleInHaystack {
 
-    public int findNeedleInHaystack(String haystack, String needle){
+    public static int findNeedleInHaystack(String haystack, String needle){
 
-        if(needle.isEmpty()){
-            return 0;
-        }
+        int m = needle.length();
+        int n = haystack.length();
 
-        if(haystack.isEmpty()){
-            return -1;
-        }
-
-        if(needle.length()==1 && haystack.length()==1){
-            if(needle.charAt(0)==haystack.charAt(0)){
-                return 0;
-            }else{
-                return -1;
+        for(int windowStart =0; windowStart <= n-m; windowStart++){
+            for(int i=0; i<m; i++){
+                if(needle.charAt(i) != haystack.charAt(windowStart + i)){
+                    break;
+                }
+                if(i==m-1){
+                    return windowStart;
+                }
             }
         }
 
-        for(int index=0; index<=haystack.length()-needle.length(); index++){
-            if(haystack.substring(index, index+needle.length()).equals(needle)){
-                return index;
-            }
-        }
 
         return -1;
+    }
+
+    public static void main(String[] args){
+        System.out.println(NeedleInHaystack.findNeedleInHaystack("hello", "ll"));
+        System.out.println(NeedleInHaystack.findNeedleInHaystack("sadbutsad", "skkkkkkkad"));
+
+        System.out.println(NeedleInHaystack.findNeedleInHaystack("leetcode", "leetcod"));
+
     }
 }
